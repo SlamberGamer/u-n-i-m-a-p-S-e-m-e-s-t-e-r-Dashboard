@@ -1,0 +1,342 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'sem2v7.ui'
+#
+# Created by: PyQt5 UI code generator 5.9
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+from datetime import date
+from datetime import datetime
+import webbrowser
+
+f_date = date(2021, 4, 10)
+l_date = date(2021, 7, 18)
+A_date = date(2021, 7, 11)
+B_date = date(2021, 7, 10)
+one = A_date - B_date
+today = date.today()
+#print("Today's date:", today)
+Total = l_date - f_date
+#print(Total.days)
+Current = l_date - today
+#print(Current.days)
+percentage = 100 - (( Current / Total ) * 100 )
+weeks = (Current / one) / 7
+print (weeks)
+
+#analog class
+def ANALOGWASSAP():
+    webbrowser.open('https://chat.whatsapp.com/IFqP5ER8twAHYHHxRjZYG9') #self.pushButton.clicked.connect(ANALOGWASSAP)
+
+def ANALOGGMEET():
+    webbrowser.open('https://classroom.google.com/c/MzExOTczMzQ4MzMy?cjc=xqsogen') #self.pushButton_2.clicked.connect(ANALOGGMEET)
+
+#mathematic II class
+def MATHCLASS():
+    webbrowser.open('https://chat.whatsapp.com/FPNDq1L2QlRFWJKLy4g2IQ') #self.pushButton_4.clicked.connect(MATHCLASS)
+
+def MATHGMEET():
+    webbrowser.open('https://classroom.google.com/u/1/c/MzExMTg3NzA3MjQ5') #self.pushButton_3.clicked.connect(MATHGMEET)
+
+#UUT122/2 Skills and Technology in Communication class
+def SKILLWASSAP():
+    webbrowser.open('https://chat.whatsapp.com/LBcEOMxu5CCHlR7d1lrx09') #self.pushButton_6.clicked.connect(SKILLWASSAP)
+
+def SKILLGMEET():
+    webbrowser.open('https://classroom.google.com/c/MzEyMTM0MTA5ODA0?cjc=uspxhuu') #self.pushButton_5.clicked.connect(SKILLGMEET)
+
+#UVA101/2 Preparatory English class
+def ENGLISHWASSAP():
+    webbrowser.open('https://chat.whatsapp.com/BRoghD96c7QBnJLUnWHqg6') #self.pushButton_8.clicked.connect(ENGLISHWASSAP)
+
+def ENGLISHGMEET():
+    webbrowser.open('https://classroom.google.com/c/MzIxNjY5NTk1NTE1?cjc=q4efvcg') #self.pushButton_7.clicked.connect(ENGLISHGMEET)
+
+#UUW130/2 Philosophy and Current Issues
+def PhilosophyWASSAP():
+    webbrowser.open('https://chat.whatsapp.com/EStOSqPQNVp8sjsnN4GV5T') #self.pushButton_10.clicked.connect(PhilosophyWASSAP)
+
+def PhilosophyGMEET():
+    webbrowser.open('https://classroom.google.com/c/MzIxMzcyMDU3MzIy?cjc=ef334cs') #self.pushButton_9.clicked.connect(PhilosophyGMEET)
+
+#EMT342 Profesional Engineer
+def ProEngineerWassap():
+    webbrowser.open('https://chat.whatsapp.com/IDhm78kMnQqKGaqIzZAR4d') #self.pushButton_12.clicked.connect(ProEngineerWassap)
+
+def ProEngineerGmeet():
+    webbrowser.open('https://classroom.google.com/c/MzAxODY0MjM3MDAx?cjc=wqbp7cf') #self.pushButton_11.clicked.connect(ProEngineerGmeet)
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)
+        MainWindow.resize(774, 501)
+        MainWindow.setLayoutDirection(QtCore.Qt.LeftToRight)
+        MainWindow.setAutoFillBackground(False)
+        MainWindow.setStyleSheet("")
+        MainWindow.setToolButtonStyle(QtCore.Qt.ToolButtonIconOnly)
+        MainWindow.setTabShape(QtWidgets.QTabWidget.Rounded)
+        MainWindow.setDockNestingEnabled(False)
+        MainWindow.setDockOptions(QtWidgets.QMainWindow.AllowTabbedDocks|QtWidgets.QMainWindow.AnimatedDocks)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(680, 0, 91, 21))
+        font = QtGui.QFont()
+        font.setFamily("Calibri Light")
+        font.setItalic(False)
+        self.label_8.setFont(font)
+        self.label_8.setObjectName("label_8")
+        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableWidget.setEnabled(True)
+        self.tableWidget.setGeometry(QtCore.QRect(270, 300, 481, 171))
+        self.tableWidget.setFocusPolicy(QtCore.Qt.TabFocus)
+        self.tableWidget.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
+        self.tableWidget.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.tableWidget.setStyleSheet("background-color: rgb(255, 243, 243);\n"
+"")
+        self.tableWidget.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.tableWidget.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.tableWidget.setMidLineWidth(-3)
+        self.tableWidget.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.tableWidget.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.tableWidget.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContents)
+        self.tableWidget.setAutoScroll(False)
+        self.tableWidget.setAutoScrollMargin(23)
+        self.tableWidget.setTabKeyNavigation(False)
+        self.tableWidget.setProperty("showDropIndicator", False)
+        self.tableWidget.setDragEnabled(True)
+        self.tableWidget.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
+        self.tableWidget.setTextElideMode(QtCore.Qt.ElideLeft)
+        self.tableWidget.setVerticalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
+        self.tableWidget.setHorizontalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
+        self.tableWidget.setShowGrid(True)
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.setColumnCount(3)
+        self.tableWidget.setRowCount(2)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setVerticalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setVerticalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.tableWidget.setItem(0, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.tableWidget.setItem(0, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.tableWidget.setItem(0, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setText("EMT182 / 3\n"
+"Analog Electronic I")
+        item.setTextAlignment(QtCore.Qt.AlignCenter)
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(9)
+        item.setFont(font)
+        self.tableWidget.setItem(1, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.tableWidget.setItem(1, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.tableWidget.setItem(1, 2, item)
+        self.tableWidget.horizontalHeader().setDefaultSectionSize(150)
+        self.tableWidget.horizontalHeader().setMinimumSectionSize(120)
+        self.tableWidget.verticalHeader().setDefaultSectionSize(70)
+        self.tableWidget.verticalHeader().setSortIndicatorShown(False)
+        self.progressBar = QtWidgets.QProgressBar(self.centralwidget)
+        self.progressBar.setGeometry(QtCore.QRect(270, 30, 481, 241))
+        self.progressBar.setAcceptDrops(False)
+        self.progressBar.setStyleSheet("background-color: rgb(234, 255, 255);")
+        self.progressBar.setProperty("value", 24)
+        self.progressBar.setTextVisible(True)
+        self.progressBar.setOrientation(QtCore.Qt.Vertical)
+        self.progressBar.setInvertedAppearance(False)
+        self.progressBar.setFormat("%p%")
+        self.progressBar.setObjectName("progressBar")
+        self.lcdNumber = QtWidgets.QLCDNumber(self.centralwidget)
+        self.lcdNumber.setGeometry(QtCore.QRect(330, 100, 111, 101))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.lcdNumber.setFont(font)
+        self.lcdNumber.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.lcdNumber.setLineWidth(0)
+        self.lcdNumber.setSmallDecimalPoint(False)
+        self.lcdNumber.setObjectName("lcdNumber")
+        self.label_7 = QtWidgets.QLabel(self.centralwidget)
+        self.label_7.setGeometry(QtCore.QRect(470, 120, 251, 71))
+        font = QtGui.QFont()
+        font.setFamily("Harlow Solid Italic")
+        font.setPointSize(24)
+        font.setBold(False)
+        font.setItalic(True)
+        font.setWeight(50)
+        self.label_7.setFont(font)
+        self.label_7.setObjectName("label_7")
+        self.lcdNumber_2 = QtWidgets.QLCDNumber(self.centralwidget)
+        self.lcdNumber_2.setGeometry(QtCore.QRect(660, 240, 64, 23))
+        self.lcdNumber_2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.lcdNumber_2.setLineWidth(0)
+        self.lcdNumber_2.setSmallDecimalPoint(False)
+        self.lcdNumber_2.setObjectName("lcdNumber_2")
+        self.label_9 = QtWidgets.QLabel(self.centralwidget)
+        self.label_9.setGeometry(QtCore.QRect(720, 240, 61, 21))
+        self.label_9.setObjectName("label_9")
+        self.pushButton_11 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_11.setGeometry(QtCore.QRect(50, 20, 161, 41))
+        self.pushButton_11.setStyleSheet("")
+        self.pushButton_11.setObjectName("pushButton_11")
+        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget.setGeometry(QtCore.QRect(20, 80, 221, 391))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.layoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.pushButton_5 = QtWidgets.QPushButton(self.layoutWidget)
+        self.pushButton_5.setStyleSheet("background-color: rgb(255, 179, 172);")
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.gridLayout.addWidget(self.pushButton_5, 5, 1, 1, 1)
+        self.pushButton_8 = QtWidgets.QPushButton(self.layoutWidget)
+        self.pushButton_8.setStyleSheet("background-color: rgb(129, 211, 255);")
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.gridLayout.addWidget(self.pushButton_8, 7, 0, 1, 1)
+        self.label_5 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_5.setObjectName("label_5")
+        self.gridLayout.addWidget(self.label_5, 8, 0, 1, 2)
+        self.label_3 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 4, 0, 1, 2)
+        self.pushButton_2 = QtWidgets.QPushButton(self.layoutWidget)
+        self.pushButton_2.setStyleSheet("background-color: rgb(255, 179, 172);")
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.gridLayout.addWidget(self.pushButton_2, 1, 1, 1, 1)
+        self.pushButton_6 = QtWidgets.QPushButton(self.layoutWidget)
+        self.pushButton_6.setStyleSheet("background-color: rgb(129, 211, 255);")
+        self.pushButton_6.setObjectName("pushButton_6")
+        self.gridLayout.addWidget(self.pushButton_6, 5, 0, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 2, 0, 1, 2)
+        self.pushButton_9 = QtWidgets.QPushButton(self.layoutWidget)
+        self.pushButton_9.setStyleSheet("background-color: rgb(255, 179, 172);")
+        self.pushButton_9.setObjectName("pushButton_9")
+        self.gridLayout.addWidget(self.pushButton_9, 9, 1, 1, 1)
+        self.pushButton_4 = QtWidgets.QPushButton(self.layoutWidget)
+        self.pushButton_4.setStyleSheet("background-color: rgb(129, 211, 255);")
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.gridLayout.addWidget(self.pushButton_4, 3, 0, 1, 1)
+        self.pushButton_3 = QtWidgets.QPushButton(self.layoutWidget)
+        self.pushButton_3.setStyleSheet("background-color: rgb(255, 179, 172);")
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.gridLayout.addWidget(self.pushButton_3, 3, 1, 1, 1)
+        self.pushButton_10 = QtWidgets.QPushButton(self.layoutWidget)
+        self.pushButton_10.setStyleSheet("background-color: rgb(129, 211, 255);")
+        self.pushButton_10.setObjectName("pushButton_10")
+        self.gridLayout.addWidget(self.pushButton_10, 9, 0, 1, 1)
+        self.pushButton_7 = QtWidgets.QPushButton(self.layoutWidget)
+        self.pushButton_7.setStyleSheet("background-color: rgb(255, 179, 172);")
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.gridLayout.addWidget(self.pushButton_7, 7, 1, 1, 1)
+        self.pushButton = QtWidgets.QPushButton(self.layoutWidget)
+        self.pushButton.setStyleSheet("background-color: rgb(129, 211, 255);")
+        self.pushButton.setObjectName("pushButton")
+        self.gridLayout.addWidget(self.pushButton, 1, 0, 1, 1)
+        self.label_4 = QtWidgets.QLabel(self.layoutWidget)
+        self.label_4.setObjectName("label_4")
+        self.gridLayout.addWidget(self.label_4, 6, 0, 1, 2)
+        self.label = QtWidgets.QLabel(self.layoutWidget)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 2)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.pushButton.clicked.connect(ANALOGWASSAP)
+        self.pushButton_2.clicked.connect(ANALOGGMEET)
+        self.pushButton_3.clicked.connect(MATHGMEET)
+        self.pushButton_4.clicked.connect(MATHCLASS)
+        self.pushButton_5.clicked.connect(SKILLGMEET)
+        self.pushButton_6.clicked.connect(SKILLWASSAP)
+        self.pushButton_7.clicked.connect(ENGLISHGMEET)
+        self.pushButton_8.clicked.connect(ENGLISHWASSAP)
+        self.pushButton_9.clicked.connect(PhilosophyGMEET)
+        self.pushButton_10.clicked.connect(PhilosophyWASSAP)
+        self.lcdNumber.setGeometry(QtCore.QRect(340, 100, 141, 101))
+        self.lcdNumber.display(weeks)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_8.setText(_translate("MainWindow", "Designed by Faiz"))
+        self.tableWidget.setSortingEnabled(True)
+        item = self.tableWidget.verticalHeaderItem(0)
+        item.setText(_translate("MainWindow", "Sat"))
+        item = self.tableWidget.verticalHeaderItem(1)
+        item.setText(_translate("MainWindow", "Sun"))
+        item = self.tableWidget.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "9.00am - 11.00am"))
+        item = self.tableWidget.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "11.30am - 12.30pm"))
+        item = self.tableWidget.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "12.30pm- 4.00pm"))
+        __sortingEnabled = self.tableWidget.isSortingEnabled()
+        self.tableWidget.setSortingEnabled(False)
+        item = self.tableWidget.item(0, 0)
+        item.setText(_translate("MainWindow", "EQT102/3 Engineering Mathematics II"))
+        item = self.tableWidget.item(0, 1)
+        item.setText(_translate("MainWindow", "EQT102 / 3\n"
+"Engineering Mathematics II"))
+        item = self.tableWidget.item(0, 2)
+        item.setText(_translate("MainWindow", "UUT122 / 2\n"
+"Skills and\n"
+"Technology in\n"
+"Communication"))
+        item = self.tableWidget.item(1, 1)
+        item.setText(_translate("MainWindow", "UVA101 / 2 Preparatory English "))
+        item = self.tableWidget.item(1, 2)
+        item.setText(_translate("MainWindow", "UUW130 / 2 \n"
+"Philosophy and Current Issues "))
+        self.tableWidget.setSortingEnabled(__sortingEnabled)
+        self.label_7.setText(_translate("MainWindow", "Weeks to go"))
+        self.label_9.setText(_translate("MainWindow", "%"))
+        self.pushButton_11.setText(_translate("MainWindow", "Online Notes"))
+        self.pushButton_5.setText(_translate("MainWindow", "Gmeet"))
+        self.pushButton_8.setText(_translate("MainWindow", "Wassap"))
+        self.label_5.setText(_translate("MainWindow", "UUW130/2 Philosophy and Current Issues "))
+        self.label_3.setText(_translate("MainWindow", "UUT122/2 Skills and Technology in Communication"))
+        self.pushButton_2.setText(_translate("MainWindow", "Gmeet"))
+        self.pushButton_6.setText(_translate("MainWindow", "Wassap"))
+        self.label_2.setText(_translate("MainWindow", "EQT102/3 Engineering Mathematics II "))
+        self.pushButton_9.setText(_translate("MainWindow", "Gmeet"))
+        self.pushButton_4.setText(_translate("MainWindow", "Wassap"))
+        self.pushButton_3.setText(_translate("MainWindow", "Gmeet"))
+        self.pushButton_10.setText(_translate("MainWindow", "Wassap"))
+        self.pushButton_7.setText(_translate("MainWindow", "Gmeet"))
+        self.pushButton.setText(_translate("MainWindow", "Wassap"))
+        self.label_4.setText(_translate("MainWindow", "UVA101/2 Preparatory English "))
+        self.label.setText(_translate("MainWindow", "EMT182/3 Analog Electronic I "))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
